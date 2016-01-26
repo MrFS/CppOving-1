@@ -15,7 +15,7 @@ int main()
 	while (1)
 	{
 
-		c = 0;
+		//c = 0;
 
 		switch ((c = _getch())) {
 
