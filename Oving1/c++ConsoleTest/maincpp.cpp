@@ -10,7 +10,7 @@ using namespace std;
 int main()
 {
 
-	cout << "Trykk 'a' på tastaturet for Oppgave 1 - Snitthastighet" << endl << "Trykk 'b' på tastaturet for Oppgave 2 - Tid" << endl;
+	cout << "Trykk 'a' p† tastaturet for Oppgave 1 - Snitthastighet" << endl << "Trykk 'b' p† tastaturet for Oppgave 2 - Tid" << endl;
 	int c = 0;
 	while (1)
 	{
@@ -38,7 +38,7 @@ int main()
 
 			cout << endl;
 
-			cout << "Trykk 'a' på tastaturet for Oppgave 1 - Snitthastighet" << endl << "Trykk 'b' på tastaturet for Oppgave 2 - Tid" << endl;
+			cout << "Trykk 'a' p† tastaturet for Oppgave 1 - Snitthastighet" << endl << "Trykk 'b' p† tastaturet for Oppgave 2 - Tid" << endl;
 
 			cout << endl;
 
@@ -81,7 +81,7 @@ int main()
 
 			cout << endl;
 
-			cout << "Trykk 'a' på tastaturet for Oppgave 1 - Snitthastighet" << endl << "Trykk 'b' på tastaturet for Oppgave 2 - Tid" << endl;
+			cout << "Trykk 'a' p† tastaturet for Oppgave 1 - Snitthastighet" << endl << "Trykk 'b' p† tastaturet for Oppgave 2 - Tid" << endl;
 
 			cout << endl;
 
