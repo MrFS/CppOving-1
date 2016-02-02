@@ -1,6 +1,6 @@
 #pragma once
 
- int snitt(int x, int y) {
+ double snitt(double x, double y) {
 
 	 return x / y;
 

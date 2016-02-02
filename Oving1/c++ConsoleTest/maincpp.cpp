@@ -1,3 +1,7 @@
+//ø = ›
+//å = †
+//æ = ‘
+
 #include <iostream>
 #include <conio.h>
 #include "mainsnitt.h"
@@ -10,7 +14,7 @@ using namespace std;
 int main()
 {
 
-	cout << "Trykk 'a' på tastaturet for Oppgave 1 - Snitthastighet" << endl << "Trykk 'b' på tastaturet for Oppgave 2 - Tid" << endl;
+	cout << "Trykk 'a' p† tastaturet for Oppgave 1 - Snitthastighet" << endl << "Trykk 'b' p† tastaturet for Oppgave 2 - Tid" << endl;
 	int c = 0;
 	while (1)
 	{
@@ -22,8 +26,8 @@ int main()
 		case FART:
 			cout << "FART" << endl;
 
-			int hastighet;
-			int tid;
+			double hastighet;
+			double tid;
 
 			cout << "Skriv inn hastighet, i km/t: ";
 
@@ -38,7 +42,7 @@ int main()
 
 			cout << endl;
 
-			cout << "Trykk 'a' på tastaturet for Oppgave 1 - Snitthastighet" << endl << "Trykk 'b' på tastaturet for Oppgave 2 - Tid" << endl;
+			cout << "Trykk 'a' p† tastaturet for Oppgave 1 - Snitthastighet" << endl << "Trykk 'b' p† tastaturet for Oppgave 2 - Tid" << endl;
 
 			cout << endl;
 
@@ -81,7 +85,7 @@ int main()
 
 			cout << endl;
 
-			cout << "Trykk 'a' på tastaturet for Oppgave 1 - Snitthastighet" << endl << "Trykk 'b' på tastaturet for Oppgave 2 - Tid" << endl;
+			cout << "Trykk 'a' p† tastaturet for Oppgave 1 - Snitthastighet" << endl << "Trykk 'b' p† tastaturet for Oppgave 2 - Tid" << endl;
 
 			cout << endl;
 
