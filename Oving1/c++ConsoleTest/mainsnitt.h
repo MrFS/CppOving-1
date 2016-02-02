@@ -2,6 +2,6 @@
 
  double snitt(double x, double y) {
 
-	 return x / y;
+		return x / y;
 
 }
