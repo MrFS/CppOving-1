@@ -33,15 +33,32 @@ int main()
 
 			cin >> hastighet;
 
-			cout << "Skriv inn hvor lang tid du brukte, i timer: ";
+			if (cin.good() && hastighet >= 0 && hastighet <= 999)
+			{
+				cout << "Skriv inn hvor lang tid du brukte, i timer: ";
 
-			cin >> tid;
+				cin >> tid;
 
+				if (cin.good() && tid >= 0.001 && tid <= 999)
+				{
+					cout << "Din snitthastighet er: " << snitt(hastighet, tid) << " km/t" << endl;
 
-			cout << "Din snitthastighet er: " << snitt(hastighet, tid) << " km/t" << endl;
+					cout << endl;
+				}
+				else
+				{
+					cout << "Kun GYLDIGE numeriske verdier" << endl;
 
-			cout << endl;
+					cout << endl;
+				}
+			}
+			else
+			{
+				cout << "Kun GYLDIGE numeriske verdier" << endl;
 
+				cout << endl;
+			}
+		
 			cout << "Trykk 'a' p† tastaturet for Oppgave 1 - Snitthastighet" << endl << "Trykk 'b' p† tastaturet for Oppgave 2 - Tid" << endl;
 
 			cout << endl;
@@ -60,26 +77,33 @@ int main()
 			cin >> time;
 			cout << endl;
 
-			hours = static_cast<int>(time / 3600);
+			if (cin.good() && time >= 1)
+			{
+				hours = static_cast<int>(time / 3600);
 
-			time = time - hours * 3600;
+				time = time - hours * 3600;
 
-			minutes = static_cast<int>(time / 60);
+				minutes = static_cast<int>(time / 60);
 
-			time = time - minutes * 60;
+				time = time - minutes * 60;
 
-			seconds = time;
+				seconds = time;
 
-			cout << "Din tid fra sekunder til formatet HH:MM:SS : " << hours;
-			if (minutes < 10)
-				cout << ":0" << minutes;
+				cout << "Din tid fra sekunder til formatet HH:MM:SS : " << hours;
+				if (minutes < 10)
+					cout << ":0" << minutes;
+				else
+					cout << ":" << minutes;
+
+				if (seconds < 10)
+					cout << ":0" << seconds;
+				else
+					cout << ":" << seconds;
+			}
 			else
-				cout << ":" << minutes;
-
-			if (seconds < 10)
-				cout << ":0" << seconds;
-			else
-				cout << ":" << seconds;
+			{
+				cout << "Kun GYLDIGE numeriske verdier" << endl;
+			}
 
 			cout << endl;
 
