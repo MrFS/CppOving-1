@@ -77,7 +77,7 @@ int main()
 			cin >> time;
 			cout << endl;
 
-			if (cin.good() && time >= 1)
+			if (cin.good() && time >= 1 && time <= 9999999)
 			{
 				hours = static_cast<int>(time / 3600);
 
