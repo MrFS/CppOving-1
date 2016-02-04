@@ -41,7 +41,16 @@ int main()
 
 				if (cin.good() && tid >= 0.001 && tid <= 999)
 				{
-					cout << "Din snitthastighet er: " << snitt(hastighet, tid) << " km/t" << endl;
+
+					if (snitt(hastighet, tid) > 1)
+					{
+						cout << "Din snitthastighet er: " << snitt(hastighet, tid) << " km/t" << endl;
+					}
+					else
+					{
+						cout << "Din snitthastighet er: " << snitt(hastighet, tid) * 1000 << " m/t" << endl;
+					}
+					
 
 					cout << endl;
 				}
@@ -114,6 +123,8 @@ int main()
 			cout << endl;
 
 			break;
+
+			return 0;
 
 		}
 	}
